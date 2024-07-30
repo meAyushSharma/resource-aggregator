@@ -1,12 +1,3 @@
-#! /usr/bin/env node
-// #! [SHEBANG]
-// const inquirer = require("inquirer");
-// const chalkAnimation = require("chalk-animation");
-// const figlet = require("figlet");
-// const { createSpinner } = require("nanospinner");
-// const chalk = require("chalk");
-// const terminalLink = require("terminal-link");
-
 import inquirer from "inquirer";
 import chalkAnimation from "chalk-animation";
 import figlet from "figlet";
