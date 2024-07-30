@@ -51,6 +51,8 @@ async function askTechnology() {
 
 await starting();
 
+
+// depriciated
 async function handleChoice(whatIs) {
   if (whatIs == "Nodejs") {
     console.log(`To learn Nodejs, you may refer to following links:
@@ -80,7 +82,7 @@ async function handleChoice(whatIs) {
     )}\n`);
     await whatToChoose();
   } else if (whatIs == "Expressjs") {
-    console.log(`To learn Nodejs, you may refer to following links:
+    console.log(`To learn Expressjs, you may refer to following links:
     
     1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
     
@@ -89,7 +91,7 @@ async function handleChoice(whatIs) {
     3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
     await whatToChoose();
   } else if (whatIs == "Reactjs") {
-    console.log(`To learn Nodejs, you may refer to following links:
+    console.log(`To learn Reactjs, you may refer to following links:
     
     1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
     
@@ -98,7 +100,7 @@ async function handleChoice(whatIs) {
     3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
     await whatToChoose();
   } else if (whatIs == "HTML/CSS") {
-    console.log(`To learn Nodejs, you may refer to following links:
+    console.log(`To learn HTML-CSS, you may refer to following links:
     
     1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
     
@@ -107,7 +109,7 @@ async function handleChoice(whatIs) {
     3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
     await whatToChoose();
   } else if (whatIs == "Javascript") {
-    console.log(`To learn Nodejs, you may refer to following links:
+    console.log(`To learn Javascript, you may refer to following links:
     
     1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
     
