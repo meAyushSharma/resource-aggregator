@@ -8,6 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
+  "files": [
+    "index.js",
+    "readme.md",
+    "package-lock.json",
+    ".gitignore"
+  ],
+  "bin": "./index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/meAyushSharma/resource-aggregator.git"

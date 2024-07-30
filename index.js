@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import inquirer from "inquirer";
 import chalkAnimation from "chalk-animation";
 import figlet from "figlet";
@@ -32,97 +34,97 @@ async function whatToChoose() {
   return choiceHandler(option.oneOutOfTwo);
 }
 
-async function askTechnology() {
-  const techList = await inquirer.prompt({
-    name: "techToLearn",
-    type: "list",
-    message: "Which tech you wish to learn via project based learning ¬_¬ \n",
-    choices: [
-      "Nodejs",
-      "Expressjs",
-      "Reactjs",
-      "HTML/CSS",
-      "Javascript",
-      "Exit",
-    ],
-  });
-  return handleChoice(techList.techToLearn);
-}
+// async function askTechnology() {
+//   const techList = await inquirer.prompt({
+//     name: "techToLearn",
+//     type: "list",
+//     message: "Which tech you wish to learn via project based learning ¬_¬ \n",
+//     choices: [
+//       "Nodejs",
+//       "Expressjs",
+//       "Reactjs",
+//       "HTML/CSS",
+//       "Javascript",
+//       "Exit",
+//     ],
+//   });
+//   return handleChoice(techList.techToLearn);
+// }
 
 await starting();
 
 
 // depriciated
-async function handleChoice(whatIs) {
-  if (whatIs == "Nodejs") {
-    console.log(`To learn Nodejs, you may refer to following links:
+// async function handleChoice(whatIs) {
+//   if (whatIs == "Nodejs") {
+//     console.log(`To learn Nodejs, you may refer to following links:
     
-    ${chalk.bgBlackBright(
-      ` 1.) ${terminalLink(
-        "Real-time-markdown-viewer",
+//     ${chalk.bgBlackBright(
+//       ` 1.) ${terminalLink(
+//         "Real-time-markdown-viewer",
 
-        "https://scotch.io/tutorials/building-a-real-time-markdown-viewer"
-      )}`
-    )}
+//         "https://scotch.io/tutorials/building-a-real-time-markdown-viewer"
+//       )}`
+//     )}
     
-    ${chalk.bgBlackBright(
-      ` 2.) ${terminalLink(
-        "Search-bot",
+//     ${chalk.bgBlackBright(
+//       ` 2.) ${terminalLink(
+//         "Search-bot",
 
-        "https://www.freecodecamp.org/news/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1"
-      )}`
-    )}
+//         "https://www.freecodecamp.org/news/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1"
+//       )}`
+//     )}
     
-    ${chalk.bgBlackBright(
-      ` 3.) ${terminalLink(
-        "Github-bot",
+//     ${chalk.bgBlackBright(
+//       ` 3.) ${terminalLink(
+//         "Github-bot",
 
-        "https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html"
-      )}`
-    )}\n`);
-    await whatToChoose();
-  } else if (whatIs == "Expressjs") {
-    console.log(`To learn Expressjs, you may refer to following links:
+//         "https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html"
+//       )}`
+//     )}\n`);
+//     await whatToChoose();
+//   } else if (whatIs == "Expressjs") {
+//     console.log(`To learn Expressjs, you may refer to following links:
     
-    1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
+//     1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
     
-    2.) https://www.freecodecamp.org/news/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1
+//     2.) https://www.freecodecamp.org/news/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1
     
-    3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
-    await whatToChoose();
-  } else if (whatIs == "Reactjs") {
-    console.log(`To learn Reactjs, you may refer to following links:
+//     3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
+//     await whatToChoose();
+//   } else if (whatIs == "Reactjs") {
+//     console.log(`To learn Reactjs, you may refer to following links:
     
-    1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
+//     1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
     
-    2.) https://www.freecodecamp.org/news/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1
+//     2.) https://www.freecodecamp.org/news/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1
     
-    3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
-    await whatToChoose();
-  } else if (whatIs == "HTML/CSS") {
-    console.log(`To learn HTML-CSS, you may refer to following links:
+//     3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
+//     await whatToChoose();
+//   } else if (whatIs == "HTML/CSS") {
+//     console.log(`To learn HTML-CSS, you may refer to following links:
     
-    1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
+//     1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
     
-    2.) https://www.freecodecamp.org/news/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1
+//     2.) https://www.freecodecamp.org/news/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1
     
-    3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
-    await whatToChoose();
-  } else if (whatIs == "Javascript") {
-    console.log(`To learn Javascript, you may refer to following links:
+//     3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
+//     await whatToChoose();
+//   } else if (whatIs == "Javascript") {
+//     console.log(`To learn Javascript, you may refer to following links:
     
-    1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
+//     1.) https://scotch.io/tutorials/building-a-real-time-markdown-viewer
     
-    2.) https://www.freecodecamp.org/news/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1
+//     2.) https://www.freecodecamp.org/news/how-to-build-a-simple-search-bot-in-30-minutes-eb56fcedcdb1
     
-    3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
-    await whatToChoose();
-  } else {
-    console.log(
-      `${chalk.blackBright("Thank you for visiting, see you next time!")}`
-    );
-  }
-}
+//     3.) https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html \n`);
+//     await whatToChoose();
+//   } else {
+//     console.log(
+//       `${chalk.blackBright("Thank you for visiting, see you next time!")}`
+//     );
+//   }
+// }
 
 async function choiceHandler(whatIs) {
   if (whatIs == "Resource-aggregator") {
