@@ -4,7 +4,7 @@
 ## 🚀 Overview
 
 **Resource Aggregator CLI** is a command-line tool that helps developers access learning resources for various technologies. It is designed to streamline access to project-based learning resources.    
-NPM package : (resource-aggregator)[https://www.npmjs.com/package/resource-aggerator]    
+NPM package : [resource-aggregator](https://www.npmjs.com/package/resource-aggerator)    
 
 ## 🎯 Features
 
