@@ -3,12 +3,12 @@
 
 ## 🚀 Overview
 
-**Resource Aggregator CLI** is a command-line tool that helps developers access learning resources for various technologies and provides a Markdown-to-HTML converter. It is designed to streamline access to project-based learning resources and simplify file conversions directly from the terminal.
+**Resource Aggregator CLI** is a command-line tool that helps developers access learning resources for various technologies. It is designed to streamline access to project-based learning resources.    
+NPM package : (resource-aggregator)[https://www.npmjs.com/package/resource-aggerator]    
 
 ## 🎯 Features
 
 - 📚 **Resource Aggregator**: Get curated learning resources for popular technologies like Node.js, Express.js, React.js, and Docker.
-- 🔄 **File Converter**: Convert Markdown to HTML and vice-versa.
 - 🎨 **Interactive CLI**: Uses colorful animations and prompts for an engaging experience.
 - 🔗 **Direct Links**: Fetch relevant tutorials and video resources.
 
@@ -17,24 +17,28 @@
 Ensure you have [Node.js](https://nodejs.org/) installed, then run:
 
 ```sh
-npx resource-aggregator-cli
+npx resource-aggerator
 ```
 
 or install globally:
 
 ```sh
-npm install -g resource-aggregator-cli
+npm i resource-aggerator
+```
+or install locally:    
+1. Clone this repo.
+2. Fork this repo.
+3. Run the following commands:
+
+```sh
+npm i
+npm start
 ```
 
 ## 📖 Usage
 
-Run the CLI tool:
-
-```sh
-resource-aggregator
-```
-
-Follow the interactive prompts to choose between the **Resource Aggregator** or **File Converter**.
+Run the CLI tool.    
+Follow the interactive prompts to choose between the **Resource Aggregator**.
 
 ### 🔍 Resource Aggregator
 Select a technology to get relevant resources:
@@ -50,14 +54,6 @@ Select a technology to get relevant resources:
 
 The CLI will provide curated articles, guides, and YouTube tutorials.
 
-### 🔄 File Converter
-To convert Markdown to HTML:
-
-```sh
-npx file-converter--md-html input.md output.html
-```
-
-
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
@@ -72,6 +68,6 @@ Give a ⭐ if you found this project useful!
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by [Ayush Sharma]
 
 
