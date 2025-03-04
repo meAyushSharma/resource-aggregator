@@ -1,8 +1,6 @@
 <h1 align="center">Resource Aggregator CLI</h1>
 
 
-![CLI Preview](https://via.placeholder.com/800x400?text=CLI+Preview)
-
 ## 🚀 Overview
 
 **Resource Aggregator CLI** is a command-line tool that helps developers access learning resources for various technologies and provides a Markdown-to-HTML converter. It is designed to streamline access to project-based learning resources and simplify file conversions directly from the terminal.
@@ -59,9 +57,6 @@ To convert Markdown to HTML:
 npx file-converter--md-html input.md output.html
 ```
 
-## 📺 Demo
-
-[![Demo Video](https://via.placeholder.com/600x300?text=Click+to+watch)](https://example.com/demo)
 
 ## 🤝 Contributing
 
